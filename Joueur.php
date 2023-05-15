@@ -36,6 +36,7 @@ class Joueur
     public function getNationalite(){
         return "Le joueur" . $this . " est de nationnalité " . $this->nationalite . "."; 
     }
+    
 
     public function getDate_Naissance()
     {
