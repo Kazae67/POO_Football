@@ -22,7 +22,7 @@ Class Pays
     // GetInfo
     public function getInfo()
     {
-        $result = $this->nomPays."<br>";
+        $result = "<b>".strtoupper($this->nomPays)."</b><br>";
         foreach ($this->equipes as $club)
         {
             $result.= $club."<br>";

@@ -28,8 +28,9 @@ class Club
         foreach ($this->carrieres as $joueurs) {
             $result .= $joueurs . "<br>"; 
         }
-        return $result . "<br>";
+        return $result. "<br>";
     }
+
 
     // TO STRING
     public function __toString()
