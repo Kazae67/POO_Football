@@ -24,7 +24,7 @@ class Club
     // GETTERS 
     public function getJoueurs()
     {
-        $result = $this."<br>";
+        $result = "<b>".strtoupper($this)."</b><br>";
         foreach ($this->carrieres as $joueurs) {
             $result .= $joueurs . "<br>"; 
         }

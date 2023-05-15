@@ -35,13 +35,13 @@ $carriereLionel = new Carriere($lionel, $psg, "2021");
 $carriereNeymar = new Carriere($neymar, $psg, "2017");
 
 // Affichage des équipes dans chaque pays 
-echo "<h3>Affichage des équipes dans chaque pays</h3>";
+echo "<h2>Affichage des équipes dans chaque pays</h2>";
 echo $france->getInfo();
 echo $espagne->getInfo();
 echo $angleterre->getInfo();
 
 // Affichage des joueurs dans chaque équipe
-echo "<h3>Affichage des joueurs dans chaque équipe</h3>";
+echo "<h2>Affichage des joueurs dans chaque équipe</h2>";
 echo $psg->getJoueurs();
 
 
