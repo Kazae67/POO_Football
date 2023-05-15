@@ -24,10 +24,8 @@ $manchester = new Club("Manchester United", $angleterre);
 $italie = new Club("Juventus", $italie);
 
 // Joueurs
-$killian = new Joueur("Killian", "Mbappe", "01-01-1992", $francais);
-$lionel = new Joueur("Lionel", "Messi", "01-01-1992", $francais);
-$neymar = new Joueur("Neymar", "Junior", "01-01-1992", $francais);
-$cristiano = new Joueur("Cristiano", "Ronaldo", "01-02-1992", $espagnol)
-
-
+$killian = new Joueur("Killian", "Mbappe", "20-12-1998", $francais);
+$lionel = new Joueur("Lionel", "Messi", "24-06-1987", $francais);
+$neymar = new Joueur("Neymar", "Junior", "05-02-1992", $francais);
+$cristiano = new Joueur("Cristiano", "Ronaldo", "05-02-1985", $espagnol)
 ?>
