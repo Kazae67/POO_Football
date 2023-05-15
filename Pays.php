@@ -12,8 +12,8 @@ Class Pays
         $this->nomPays=$nomPays;
         $this->equipes=[];
     }
-    public function nouveauClubDansPays($nouveauClub)
+    public function nouveauClubsDansPays($equipe)
     {
-        $this->equipes[] = $nouveauClub;
+        $this->equipes[] = $equipe;
     }
 }
