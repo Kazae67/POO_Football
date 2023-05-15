@@ -40,9 +40,9 @@ class Joueur
         $age = date_diff($now, $bd);
         return $age->y;
     }
-    
+
     public function getNationalite(){
-        return "Le joueur" . $this . " est de nationnalité " . $this->nationalite . "."; 
+        return "Joueur '" . $this . "' est de nationnalité : " . $this->nationalite . "."; 
     }
 
 

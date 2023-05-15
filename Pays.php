@@ -20,7 +20,7 @@ Class Pays
 
     public function getInfo()
     {
-        $result= $this->nomPays."<br>";
+        $result = $this->nomPays."<br>";
         foreach ($this->equipes as $club)
         {
             $result.= $club."<br>";
