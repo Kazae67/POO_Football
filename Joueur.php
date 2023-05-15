@@ -3,17 +3,23 @@ class Player
 {
     private $nom;
     private $prenom;
-    private $sexe;
     private $date_naissance;
     private $nationalite;
     private $clubs;
 
-    public function __construct($nom, $prenom, $sexe, $date_naissance, $nationalite){
+    public function __construct($nom, $prenom, $date_naissance, $nationalite){
         $this->nom= $nom;
         $this->prenom= $prenom;
-        $this->sexe = $sexe;
         $this->date_naissance = $date_naissance;
         $this->nationalite = $nationalite;
         $this->clubs = [];
+    }
+
+    public function nouveauClub($nouveauClub){
+        $this->clubs[] = $nouveauClub;
+    }
+
+    public function getNationalite(){
+        return "Le joueur" . $this . " est de nationnalité " . $this->nationalite . "."; 
     }
 }
