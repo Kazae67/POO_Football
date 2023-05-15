@@ -3,13 +3,13 @@
 // Class
 class Nationalite
 {
-    private $nomNationalite;
+    private $nom_nationalite;
     private $joueurs;
 
     // Construct
-    public function __Construct($nomNationalite)
+    public function __Construct($nom_nationalite)
     {
-        $this->nomNationalite = $nomNationalite;
+        $this->nom_nationalite = $nom_nationalite;
         $this->joueurs = [];
     }
 }
