@@ -13,11 +13,13 @@ Class Pays
         $this->equipes=[];
     }
 
+    // Ajouter
     public function ajouterClubsDansPays($equipe)
     {
         $this->equipes[] = $equipe;
     }
 
+    // Getters
     public function getInfo()
     {
         $result = $this->nomPays."<br>";

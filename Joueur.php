@@ -9,7 +9,6 @@ class Joueur
     private $nationalite;
     private $clubs;
 
-
     // Construct
     public function __construct($nom, $prenom, $date_naissance, $nationalite){
         $this->nom= $nom;
@@ -19,6 +18,7 @@ class Joueur
         $this->clubs = [];
     }
 
+    // Ajouter
     public function ajouterClub($nouveauClub){
         $this->clubs[] = $nouveauClub;
     }
