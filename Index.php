@@ -27,5 +27,6 @@ $italie = new Club("Juventus", $italie);
 $killian = new Joueur("Killian", "Mbappe", "20-12-1998", $francais);
 $lionel = new Joueur("Lionel", "Messi", "24-06-1987", $francais);
 $neymar = new Joueur("Neymar", "Junior", "05-02-1992", $francais);
-$cristiano = new Joueur("Cristiano", "Ronaldo", "05-02-1985", $espagnol)
+$cristiano = new Joueur("Cristiano", "Ronaldo", "05-02-1985", $espagnol);
+
 ?>
