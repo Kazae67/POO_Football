@@ -25,5 +25,6 @@ Class Pays
         {
             $result.= $club."<br>";
         }
+        return $result."<br>";
     }
 }

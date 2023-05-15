@@ -16,7 +16,6 @@ $anglais = new Nationalite("Anglais");
 $italien = new Nationalite("Italien");
 
 // Clubs
-
 $psg = new Club("PSG", $france);
 $rcs = new Club("Racing Club de Strasbourg", $france);
 $realmadrid = new Club("Real Madrid", $espagne);
