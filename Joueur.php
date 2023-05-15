@@ -10,7 +10,7 @@ class Joueur
     private $clubs;
 
     // Construct
-    public function __construct($nom, $prenom, $date_naissance, $nationalite){
+    public function __construct($nom, $prenom, $date_naissance, nationalite $nationalite){
         $this->nom= $nom;
         $this->prenom= $prenom;
         $this->date_naissance = $date_naissance;
@@ -23,16 +23,7 @@ class Joueur
         $this->clubs[] = $nouveauClub;
     }
 
-    // Getters
-    public function getClub()
-    {
-        $result =  "Le joueur " . $this . " fait partie des équipes : <br>";
-        foreach ($this->clubs as $club) {
-            $result .= $club . "<br>"; 
-        }
-        return $result;
-    }
-
+    // GETTERS
     public function getDate_Naissance()
     {
         $now = new DateTime();
@@ -41,20 +32,10 @@ class Joueur
         return $age->y;
     }
 
-    public function getNationalite(){
-        return "Joueur '" . $this . "' est de nationnalité : " . $this->nationalite . "."; 
-    }
-
-    // GetInfo
-    public function getInfo()
+    // TO STRING
+    public function __toString()
     {
-        $result = $this . " Né " . $this->date_naissance . " " . $this->nationalite . " " .  " :<br>";
-        foreach ($this->clubs as $club) {
-            $result .= $club . "<br>";
-        }
-        return $result ."<br>";
+        return $this->nom . " " . $this->prenom;
     }
-
-
 }
 

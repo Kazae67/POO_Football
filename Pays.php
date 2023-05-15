@@ -19,8 +19,6 @@ Class Pays
         $this->equipes[] = $equipe;
     }
 
-    // Getters
-
     // GetInfo
     public function getInfo()
     {

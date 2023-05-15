@@ -4,16 +4,23 @@
 class Carriere{
     private $joueur;
     private $club;
-    private $debut_contrat;
-    private $fin_contrat;
-
-
+    private $annee_contrat;
+ 
     // Construct
-    public function __construct(Joueur $joueur, Club $club, $debut_contrat, $fin_contrat){
+    public function __construct(Joueur $joueur, Club $club, $annee_contrat){
         $this->joueur = $joueur;
+        $this->joueur->ajouterClub($this);
+
         $this->club= $club;
-        $this->debut_contrat = $debut_contrat;
-        $this->fin_contrat = $fin_contrat;
+        $this->club->ajouterJoueur($this);
+
+        $this->annee_contrat = $annee_contrat;
+    }
+
+    // TO STRING
+    public function __toString()
+    {
+        return $this->joueur.  " (" . $this->annee_contrat . ")";
     }
 }
 
