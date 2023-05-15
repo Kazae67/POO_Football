@@ -1,5 +1,5 @@
 <?php
-class Nationality
+class Nationalite
 {
     private $nomNationalite;
     private $joueurs;

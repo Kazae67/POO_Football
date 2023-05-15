@@ -1,5 +1,5 @@
 <?php
-Class Country
+Class Pays
 {
     private $nomPays;
     private $equipes;

@@ -1,5 +1,5 @@
 <?php
-class Player
+class Joueur
 {
     private $nom;
     private $prenom;

@@ -1,5 +1,5 @@
 <?php
-class Club
+class Equipe
 {
     private $nomEquipe;
     private $pays;
