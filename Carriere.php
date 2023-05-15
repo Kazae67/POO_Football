@@ -7,6 +7,7 @@ class Carriere{
     private $debut_contrat;
     private $fin_contrat;
 
+    
     // Construct
     public function __construct($club, $joueur, $debut_contrat, $fin_contrat){
         $this->club= $club;
