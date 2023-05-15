@@ -45,6 +45,15 @@ class Joueur
         return "Joueur '" . $this . "' est de nationnalité : " . $this->nationalite . "."; 
     }
 
+    // GetInfo
+    public function getInfo()
+    {
+        $result = $this . " Né " . $this->date_naissance . " " . $this->nationalite . " " .  " :<br>";
+        foreach ($this->clubs as $club) {
+            $result .= $club . "<br>";
+        }
+        return $result ."<br>";
+    }
 
 }
 

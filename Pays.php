@@ -9,8 +9,8 @@ Class Pays
     // Construct
     public function __Construct ($nomPays)
     {
-        $this->nomPays=$nomPays;
-        $this->equipes=[];
+        $this->nomPays = $nomPays;
+        $this->equipes = [];
     }
 
     // Ajouter
@@ -20,6 +20,8 @@ Class Pays
     }
 
     // Getters
+
+    // GetInfo
     public function getInfo()
     {
         $result = $this->nomPays."<br>";
