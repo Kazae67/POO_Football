@@ -12,5 +12,4 @@ class Club
         $this->pays = $pays;
         $this->pays->ajouterClubsDansPays($this);
     }
-
 }

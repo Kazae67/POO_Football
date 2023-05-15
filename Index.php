@@ -23,4 +23,9 @@ $barcelone = new Club("FC Barcelone", $espagne);
 $manchester = new Club("Manchester United", $angleterre);
 $italie = new Club("Juventus", $italie);
 
+// Joueurs
+$killian = new Joueur("Killian", "Mbappe", "01-01-1992", $francais);
+$lionel = new Joueur("Lionel", "Messi", "01-01-1992", $francais);
+$neymar = new Joueur("Neymar", "Junior", "01-01-1992", $francais);
+$cristiano = new Joueur("Cristiano", "Ronaldo", "20-12-1998", $espagnol)
 ?>
