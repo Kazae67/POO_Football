@@ -26,7 +26,7 @@ class Joueur
     // Getters
     public function getClub()
     {
-        $result =  "Le joueur " . $this . " fait partie de l'équipe : <br>";
+        $result =  "Le joueur " . $this . " fait partie des équipes : <br>";
         foreach ($this->clubs as $club) {
             $result .= $club . "<br>"; 
         }
@@ -54,6 +54,7 @@ class Joueur
         }
         return $result ."<br>";
     }
+
 
 }
 

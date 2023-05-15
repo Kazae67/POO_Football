@@ -12,4 +12,5 @@ class Nationalite
         $this->nom_nationalite = $nom_nationalite;
         $this->joueurs = [];
     }
+
 }

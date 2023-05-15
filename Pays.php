@@ -31,4 +31,5 @@ Class Pays
         }
         return $result."<br>";
     }
+
 }

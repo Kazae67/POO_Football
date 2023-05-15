@@ -20,12 +20,18 @@ class Club
     {
         $this->carrieres[] = $nouveauJoueur;
     }
-    public function getJoueur()
+    public function getJoueurs()
     {
         $result =  "club '" . $this . "' :<br>";
         foreach ($this->carrieres as $joueurs) {
             $result .= $joueurs . "<br>"; 
         }
         return $result . "<br>";
+    }
+
+    // TO STRING
+    public function __toString()
+    {
+        return $this->nom_club;
     }
 }

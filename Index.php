@@ -29,5 +29,9 @@ $lionel = new Joueur("Lionel", "Messi", "24-06-1987", $francais);
 $neymar = new Joueur("Neymar", "Junior", "05-02-1992", $francais);
 $cristiano = new Joueur("Cristiano", "Ronaldo", "05-02-1985", $espagnol);
 
+
+// Affichage
 echo $france->getInfo();
+echo $espagne->getInfo();
+echo $angleterre->getInfo();
 ?>
