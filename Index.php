@@ -53,5 +53,6 @@ echo $barcelone->getJoueurs();
 // Affichage de la carrière des joueurs
 echo "<h2>Affichage de la carrière des joueurs</h2>";
 echo $killian->getInfo();
+echo $lionel->getInfo();
 
 ?>

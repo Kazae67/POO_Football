@@ -39,7 +39,7 @@ class Joueur
         foreach ($this->clubs as $club) {
             $result .= $club . "<br>";
         }
-        return $result;
+        return $result. "<br>";
     }
 
     // TO STRING
