@@ -38,7 +38,8 @@ class Club
     {
         $result = "<b>".strtoupper($this)."</b><br>";
         foreach ($this->carrieres as $carriere) {
-            $result .= $carriere->getJoueur(). "<br>"; 
+            $result .= $carriere->getJoueur()." - "; 
+            $result .= $carriere->getAnneeContrat(). "<br>";
         }
         return $result. "<br>";
     }
