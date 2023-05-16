@@ -10,7 +10,7 @@ $angleterre = new Pays("Angleterre");
 $italie = new Pays("Italie");
 
 // Nationalite
-$francais = new Nationalite("Francais");
+$francais = new Nationalite("France");
 $espagnol = new Nationalite("Espagnol");
 $anglais = new Nationalite("Anglais");
 $italien = new Nationalite("Italien");
@@ -49,5 +49,9 @@ echo "<h2>Affichage des joueurs dans chaque équipe</h2>";
 echo $psg->getJoueurs();
 echo $barcelone->getJoueurs();
 
+
+// Affichage de la carrière des joueurs
+echo "<h2>Affichage de la carrière des joueurs</h2>";
+echo $killian->getInfo();
 
 ?>

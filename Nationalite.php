@@ -13,4 +13,9 @@ class Nationalite
         $this->joueurs = [];
     }
 
+    public function __toString()
+    {
+        return $this->nom_nationalite;
+    }
+
 }

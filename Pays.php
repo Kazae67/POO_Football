@@ -30,4 +30,9 @@ Class Pays
         return $result."<br>";
     }
 
+    public function __toString()
+    {
+        return $this->nomPays;
+    }
+
 }
