@@ -11,12 +11,10 @@ class Carriere{
         $this->joueur = $joueur;
         $this->joueur->ajouterCarriere($this);
        
-
         $this->club= $club;
         $this->club->ajouterCarriere($this); // "THIS" au moment où c'est lu c'est l'instance "en cours" / sur le moment de la classe 
 
-        $this->anneeContrat = $anneeContrat;
-        
+        $this->anneeContrat = $anneeContrat;  
     }
 
     // Getters
@@ -26,6 +24,10 @@ class Carriere{
 
     public function getClub(){
         return $this->club;
+    }
+    
+    public function getAnneeContrat(){
+        return $this->anneeContrat;
     }
 
     // TO STRING

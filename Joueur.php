@@ -23,6 +23,23 @@ class Joueur
         $this->carrieres[] = $carriere;
     }
 
+    // Getters
+    public function getNom(){
+        return $this->nom;
+    }
+    
+    public function getPrenom(){
+        return $this->prenom;
+    }
+
+    public function getNationalite(){
+        return $this->nationalite;
+    }
+
+    public function getCarrieres(){
+        return $this->carrieres;
+    }
+    
     // Methode
     public function getDateNaissance()
     {

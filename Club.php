@@ -21,6 +21,18 @@ class Club
         $this->carrieres[] = $carriere;
     }
 
+    // Getters
+    public function getNom(){
+        return $this->nom;
+    }
+
+    public function getPays(){
+        return $this->pays;
+    }
+    public function getCarrieres(){
+        return $this->carrieres;
+    }
+
     // Methode
     public function getJoueurs()
     {

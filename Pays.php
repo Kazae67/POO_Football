@@ -19,7 +19,16 @@ Class Pays
         $this->equipes[] = $equipe;
     }
 
-    // GetInfo
+    // Getters
+    public function getNomPays(){
+        return $this->nomPays;
+    }
+
+    public function getEquipes(){
+        return $this->equipes;
+    }
+    
+    // GET INFO
     public function getInfo()
     {
         $result = "<b>".strtoupper($this->nomPays)."</b><br>";
@@ -30,6 +39,7 @@ Class Pays
         return $result."<br>";
     }
 
+    // TO STRING
     public function __toString()
     {
         return $this->nomPays;

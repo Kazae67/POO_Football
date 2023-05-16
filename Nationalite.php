@@ -3,19 +3,29 @@
 // Class
 class Nationalite
 {
-    private $nom_nationalite;
+    private $nomNationalite;
     private $joueurs;
 
     // Construct
-    public function __Construct($nom_nationalite)
+    public function __Construct($nomNationalite)
     {
-        $this->nom_nationalite = $nom_nationalite;
+        $this->nomNationalite = $nomNationalite;
         $this->joueurs = [];
     }
 
+    // Getters
+    public function getNomNationalite(){
+        return $this->nomNationalite;
+    }
+
+    public function getJoueurs(){
+        return $this->joueurs;
+    }
+
+    // TO STRING
     public function __toString()
     {
-        return $this->nom_nationalite;
+        return $this->nomNationalite;
     }
 
 }
