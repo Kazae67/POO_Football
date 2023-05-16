@@ -58,6 +58,7 @@ echo "<h2>Affichage des joueurs dans chaque équipe</h2>";
 echo $psg->getJoueurs();
 echo $barcelone->getJoueurs();
 echo $juventus->getJoueurs();
+echo $manchester->getJoueurs();
 
 
 // Affichage de la carrière des joueurs
