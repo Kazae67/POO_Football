@@ -3,38 +3,37 @@
 // Class
 class Club
 {
-    private $nom_club;
-    private $pays;
-    private $carrieres;
+    private string $nom;
+    private Pays $pays;
+    private array $carrieres; // Tableau de Carriere
 
     // Construct
-    public function __construct($nom_club, Pays $pays){
-        $this->nom_club = $nom_club;
+    public function __construct($nom, Pays $pays){
+        $this->nom = $nom;
         $this->pays = $pays;
         $this->pays->ajouterClubsDansPays($this);
         $this->carrieres = [];
     }
 
     // Ajouter
-    public function ajouterJoueur($nouveauJoueur)
+    public function ajouterCarriere($carriere)
     {
-        $this->carrieres[] = $nouveauJoueur;
+        $this->carrieres[] = $carriere;
     }
 
-    // GETTERS 
+    // Methode
     public function getJoueurs()
     {
         $result = "<b>".strtoupper($this)."</b><br>";
-        foreach ($this->carrieres as $joueurs) {
-            $result .= $joueurs . "<br>"; 
+        foreach ($this->carrieres as $carriere) {
+            $result .= $carriere->getJoueur() . "<br>"; 
         }
         return $result. "<br>";
     }
 
-
     // TO STRING
     public function __toString()
     {
-        return $this->nom_club;
+        return $this->nom;
     }
 }

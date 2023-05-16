@@ -10,7 +10,7 @@ $angleterre = new Pays("Angleterre");
 $italie = new Pays("Italie");
 
 // Nationalite
-$francais = new Nationalite("France");
+$francais = new Nationalite("Français");
 $espagnol = new Nationalite("Espagnol");
 $anglais = new Nationalite("Anglais");
 $italien = new Nationalite("Italien");

@@ -4,25 +4,35 @@
 class Carriere{
     private $joueur;
     private $club;
-    private $annee_contrat;
+    private $anneeContrat;
  
     // Construct
-    public function __construct(Joueur $joueur, Club $club, $annee_contrat){
+    public function __construct(Joueur $joueur, Club $club, $anneeContrat){
         $this->joueur = $joueur;
-        $this->joueur->ajouterClub($this);
+        $this->joueur->ajouterCarriere($this);
        
 
         $this->club= $club;
-        $this->club->ajouterJoueur($this->joueur);
+        $this->club->ajouterCarriere($this); // "THIS" au moment où c'est lu c'est l'instance "en cours" / sur le moment de la classe 
 
-        $this->annee_contrat = $annee_contrat;
+        $this->anneeContrat = $anneeContrat;
         
+    }
+
+    // Getters
+    public function getJoueur(){
+        return $this->joueur;
+    }
+
+    public function getClub(){
+        return $this->club;
     }
 
     // TO STRING
     public function __toString()
     {
-        return $this->club.  " (" . $this->annee_contrat . ")";
+        // return $this->club.  " (" . $this->anneeContrat . ")";
+        return "Je suis une carrière == le lien entre le club " . $this->club.  " et le joueur " . $this->joueur . " pour l'année " . $this->anneeContrat . "<br />";
     }
 }
 

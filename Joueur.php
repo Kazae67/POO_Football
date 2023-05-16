@@ -5,29 +5,29 @@ class Joueur
 {
     private $nom;
     private $prenom;
-    private $date_naissance;
+    private $dateNaissance;
     private $nationalite;
-    private $clubs;
+    private array $carrieres;
 
     // Construct
-    public function __construct($nom, $prenom, $date_naissance, nationalite $nationalite){
+    public function __construct($nom, $prenom, $dateNaissance, Nationalite $nationalite){
         $this->nom= $nom;
         $this->prenom= $prenom;
-        $this->date_naissance = $date_naissance;
+        $this->dateNaissance = $dateNaissance;
         $this->nationalite = $nationalite;
-        $this->clubs = [];
+        $this->carrieres = [];
     }
 
     // Ajouter
-    public function ajouterClub($nouveauClub){
-        $this->clubs[] = $nouveauClub;
+    public function ajouterCarriere($carriere){
+        $this->carrieres[] = $carriere;
     }
 
-    // GETTERS
-    public function getDate_Naissance()
+    // Methode
+    public function getDateNaissance()
     {
         $now = new DateTime();
-        $bd = new DateTime($this->date_naissance);
+        $bd = new DateTime($this->dateNaissance);
         $age = date_diff($now, $bd);
         return $age->y;
     }
@@ -35,9 +35,9 @@ class Joueur
     // GET INFO
     public function getInfo()
     {
-        $result = "<b>".strtoupper($this) . "</b><br> " . $this->nationalite . " " . "- " . $this->getDate_Naissance() . " ans<br>" ;
-        foreach ($this->clubs as $club) {
-            $result .= $club . "<br>";
+        $result = "<b>".strtoupper($this) . "</b><br> " . $this->nationalite . " " . "- " . $this->getDateNaissance() . " ans<br>" ; // Getter sert à récupérer la valeur d'un attribut d'une classe (depuis l'extérieur de cette classe)
+        foreach ($this->carrieres as $carriere) {
+            $result .= $carriere->getClub() . "<br>";
         }
         return $result. "<br>";
     }
