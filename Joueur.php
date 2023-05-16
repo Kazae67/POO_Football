@@ -32,20 +32,20 @@ class Joueur
         return $age->y;
     }
 
-    // TO STRING
-    public function __toString()
-    {
-        return $this->nom . " " . $this->prenom;
-    }
-
     // GET INFO
     public function getInfo()
     {
-        $result = "<b>".strtoupper($this) . "</b><br> " . $this->nationalite . " " . "(" . $this->getDate_Naissance() . " ans) :<br>";
+        $result = "<b>".strtoupper($this) . "</b><br> " . $this->nationalite . " " . "- " . $this->getDate_Naissance() . " ans<br>";
         foreach ($this->clubs as $club) {
             $result .= $club . "<br>";
         }
         return $result;
+    }
+
+    // TO STRING
+    public function __toString()
+    {
+        return $this->nom . " " . $this->prenom;
     }
 }
 
