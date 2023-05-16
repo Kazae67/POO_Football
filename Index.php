@@ -60,7 +60,6 @@ echo $barcelone->getJoueurs();
 echo $juventus->getJoueurs();
 echo $manchester->getJoueurs();
 
-
 // Affichage de la carrière des joueurs
 echo "<h2>Affichage de la carrière des joueurs</h2>";
 echo $killian->getInfo();
