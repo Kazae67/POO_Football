@@ -4,19 +4,19 @@
 Class Pays
 {
     private $nomPays;
-    private $equipes;
+    private $clubs;
 
     // Construct
     public function __Construct ($nomPays)
     {
         $this->nomPays = $nomPays;
-        $this->equipes = [];
+        $this->clubs = [];
     }
 
     // Ajouter
-    public function ajouterClubsDansPays($equipe)
+    public function ajouterClub($club)
     {
-        $this->equipes[] = $equipe;
+        $this->clubs[] = $club;
     }
 
     // Getters
@@ -24,15 +24,15 @@ Class Pays
         return $this->nomPays;
     }
 
-    public function getEquipes(){
-        return $this->equipes;
+    public function getClubs(){
+        return $this->clubs;
     }
-    
+
     // GET INFO
     public function getInfo()
     {
-        $result = "<b>".strtoupper($this->nomPays)."</b><br>";
-        foreach ($this->equipes as $club)
+        $result = "<b>".strtoupper($this)."</b><br>";
+        foreach ($this->clubs as $club)
         {
             $result.= $club."<br>";
         }

@@ -11,7 +11,7 @@ class Club
     public function __construct($nom, Pays $pays){
         $this->nom = $nom;
         $this->pays = $pays;
-        $this->pays->ajouterClubsDansPays($this);
+        $this->pays->ajouterClub($this);
         $this->carrieres = [];
     }
 
