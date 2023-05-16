@@ -36,9 +36,15 @@ $carriereKillianPsg = new Carriere($killian, $psg, "2017");
 $carriereLionelPsg = new Carriere($lionel, $psg, "2021");
 $carriereNeymarPsg = new Carriere($neymar, $psg, "2017");
 
-// Carrières Juventus
+// Carrières Barcelone
 $carriereLionelBarcelone = new Carriere($lionel, $barcelone, "2004");
 $carriereNeymarBarcelone = new Carriere($neymar, $barcelone, "2013");
+
+// Carrière Juventus
+$carriereCristianoJuventus = new Carriere($cristiano, $juventus, "2018");
+
+// Carrière Manchester
+$carriereCristianoManchester = new Carriere($cristiano, $manchester, "2021");
 
 // Affichage des équipes dans chaque pays 
 echo "<h2>Affichage des équipes dans chaque pays</h2>";
@@ -51,6 +57,7 @@ echo $italie->getInfo();
 echo "<h2>Affichage des joueurs dans chaque équipe</h2>";
 echo $psg->getJoueurs();
 echo $barcelone->getJoueurs();
+echo $juventus->getJoueurs();
 
 
 // Affichage de la carrière des joueurs
@@ -58,5 +65,6 @@ echo "<h2>Affichage de la carrière des joueurs</h2>";
 echo $killian->getInfo();
 echo $cristiano->getInfo();
 echo $lionel->getInfo();
+echo $neymar->getInfo();
 
 ?>
