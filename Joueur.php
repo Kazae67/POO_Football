@@ -41,7 +41,7 @@ class Joueur
     // GET INFO
     public function getInfo()
     {
-        $result = $this . " <br> " . $this->nationalite . " " . "(" . $this->getDate_Naissance() . " ans) :<br>";
+        $result = "<b>".strtoupper($this) . "</b><br> " . $this->nationalite . " " . "(" . $this->getDate_Naissance() . " ans) :<br>";
         foreach ($this->clubs as $club) {
             $result .= $club . "<br>";
         }
