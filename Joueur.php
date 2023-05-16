@@ -54,9 +54,9 @@ class Joueur
     {
         $result = "<b>".strtoupper($this) . "</b><br> " . $this->nationalite . " " . "- " . $this->getDateNaissance() . " ans<br>" ; // Getter sert à récupérer la valeur d'un attribut d'une classe (depuis l'extérieur de cette classe)
         foreach ($this->carrieres as $carriere) {
-            $result .= $carriere->getClub() . "<br>";
+            $result .= $carriere->getClub() .  "<br>";
         }
-        return $result. "<br>";
+        return $result.  "<br>";
     }
 
     // TO STRING
