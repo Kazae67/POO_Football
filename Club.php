@@ -8,7 +8,7 @@ class Club
     private array $carrieres; // Tableau de Carriere
 
     // Construct
-    public function __construct($nom, Pays $pays){
+    public function __construct(string $nom, Pays $pays){
         $this->nom = $nom;
         $this->pays = $pays;
         $this->pays->ajouterClub($this);
@@ -44,8 +44,7 @@ class Club
     }
 
     // TO STRING
-    public function __toString()
-    {
+    public function __toString(){
         return $this->nom;
     }
 }

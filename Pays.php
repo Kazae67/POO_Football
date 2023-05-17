@@ -7,15 +7,13 @@ Class Pays
     private array $clubs;
 
     // Construct
-    public function __construct (string $nomPays)
-    {
+    public function __construct (string $nomPays){
         $this->nomPays = $nomPays;
         $this->clubs = [];
     }
 
     // Ajouter
-    public function ajouterClub($club)
-    {
+    public function ajouterClub($club){
         $this->clubs[] = $club;
     }
 
@@ -29,8 +27,7 @@ Class Pays
     }
 
     // GET INFO
-    public function getInfo()
-    {
+    public function getInfo(){
         $result = "<b>".strtoupper($this)."</b><br>";
         foreach ($this->clubs as $club)
         {
@@ -40,8 +37,7 @@ Class Pays
     }
 
     // TO STRING
-    public function __toString()
-    {
+    public function __toString(){
         return $this->nomPays;
     }
 

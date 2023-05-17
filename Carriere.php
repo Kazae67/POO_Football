@@ -18,11 +18,11 @@ class Carriere{
     }
 
     // Getters
-    public function getJoueur():string{
+    public function getJoueur():Joueur{
         return $this->joueur;
     }
     
-    public function getClub():string{
+    public function getClub():Club{
         return $this->club;
     }
     

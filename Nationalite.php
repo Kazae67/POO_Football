@@ -7,8 +7,7 @@ class Nationalite
     private array $joueurs;
 
     // Construct
-    public function __construct(string $nomNationalite)
-    {
+    public function __construct(string $nomNationalite){
         $this->nomNationalite = $nomNationalite;
         $this->joueurs = [];
     }
@@ -23,8 +22,7 @@ class Nationalite
     }
 
     // TO STRING
-    public function __toString()
-    {
+    public function __toString(){
         return $this->nomNationalite;
     }
 
