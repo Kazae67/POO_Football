@@ -3,11 +3,11 @@
 // Class
 Class Pays
 {
-    private $nomPays;
-    private $clubs;
+    private string $nomPays;
+    private array $clubs;
 
     // Construct
-    public function __Construct ($nomPays)
+    public function __construct (string $nomPays)
     {
         $this->nomPays = $nomPays;
         $this->clubs = [];
@@ -20,11 +20,11 @@ Class Pays
     }
 
     // Getters
-    public function getNomPays(){
+    public function getNomPays():string{
         return $this->nomPays;
     }
 
-    public function getClubs(){
+    public function getClubs():array{
         return $this->clubs;
     }
 

@@ -3,14 +3,14 @@
 // Class
 class Joueur
 {
-    private $nom;
-    private $prenom;
+    private string $nom;
+    private string $prenom;
     private $dateNaissance;
-    private $nationalite;
+    private string $nationalite;
     private array $carrieres;
 
     // Construct
-    public function __construct($nom, $prenom, $dateNaissance, Nationalite $nationalite){
+    public function __construct(string $nom, string $prenom, $dateNaissance, Nationalite $nationalite){
         $this->nom= $nom;
         $this->prenom= $prenom;
         $this->dateNaissance = $dateNaissance;
@@ -24,11 +24,11 @@ class Joueur
     }
 
     // Getters
-    public function getNom(){
+    public function getNom():string{
         return $this->nom;
     }
     
-    public function getPrenom(){
+    public function getPrenom():string{
         return $this->prenom;
     }
 
@@ -36,7 +36,7 @@ class Joueur
         return $this->nationalite;
     }
 
-    public function getCarrieres(){
+    public function getCarrieres():array{
         return $this->carrieres;
     }
     

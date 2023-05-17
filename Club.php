@@ -22,20 +22,19 @@ class Club
     }
 
     // Getters
-    public function getNom(){
+    public function getNom():string{
         return $this->nom;
     }
 
-    public function getPays(){
+    public function getPays():Pays{
         return $this->pays;
     }
-    public function getCarrieres(){
+    public function getCarrieres():array{
         return $this->carrieres;
     }
 
     // Methode
-    public function getJoueurs()
-    {
+    public function getJoueurs(){
         $result = "<b>".strtoupper($this)."</b><br>";
         foreach ($this->carrieres as $carriere) {
             $result .= $carriere->getJoueur()." - "; 
